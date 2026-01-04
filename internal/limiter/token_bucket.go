@@ -45,3 +45,9 @@ func (tb *TokenBucket) Allow() bool {
 
 	return false
 }
+
+func (tb *TokenBucket) Remaining() int {
+	tb.mu.Lock()
+	defer tb.mu.Unlock()
+	return tb.tokens
+}
