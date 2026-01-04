@@ -38,7 +38,7 @@ Backend Services (:9000+)
 3. Request passes through **Rate Limiting Middleware**
 4. Gateway router (`ServeMux`) decides:
 
-   * `/test` → local handler
+   * `/health` → local handler
    * `/api/*` → reverse proxy
 5. Reverse proxy forwards request to backend service (:9000)
 6. Response flows back through middleware to client
@@ -106,10 +106,10 @@ http://localhost:8080
 
 ## 🧪 Testing
 
-### Route Check
+### Health Check
 
 ```bash
-curl http://localhost:8080/test
+curl http://localhost:8080/health
 ```
 
 ### Rate Limiting Test

@@ -17,7 +17,7 @@ import (
 
 func main() {
 	mux := http.NewServeMux()
-	mux.HandleFunc("/test", handler.Test)
+	mux.HandleFunc("/health", handler.Health)
 
 	// Reverse Proxy
 	backendProxy, err := proxy.NewReverseProxy("http://localhost:9000")
