@@ -1,10 +1,10 @@
-# API Guard 🚀
+# API Guard
 
 A **production-ready API Gateway** built in **Go** that provides reverse proxying, middleware-based rate limiting, logging, health checks, and graceful shutdown. Designed with clean architecture and extensibility in mind.
 
 ---
 
-## ✨ Features
+## Features
 
 * 🔁 **Reverse Proxy** – Routes API requests to backend services
 * 🚦 **Rate Limiting** – Per-client (IP-based) token bucket limiter
@@ -17,9 +17,9 @@ A **production-ready API Gateway** built in **Go** that provides reverse proxyin
 
 ---
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 
-```mermaid
+```
 Client
   ↓
 API Gateway (:8080)
@@ -83,7 +83,7 @@ api-guard/
 ### Run Backend Service (Dummy)
 
 ```bash
-go run backend/main.go   # Runs on :9000
+go run main.go   # Runs on :9000
 ```
 
 Or any HTTP service on port `9000`.
