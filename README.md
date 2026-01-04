@@ -163,3 +163,13 @@ Active requests are allowed to complete before shutdown.
 * **Architecture:** Middleware-based
 
 ---
+
+## Possible Enhancements
+
+* Per-route rate limiting
+* Config-driven rate limits (YAML / Dynamic Config)
+* Redis-backed distributed rate limiting
+* Admin / Control Plane API
+* Authentication & Authorization middleware (JWT/API key validation at the gateway level)
+
+---
