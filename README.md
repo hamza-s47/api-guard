@@ -104,7 +104,7 @@ http://localhost:8080
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ### Health Check
 
@@ -133,7 +133,7 @@ X-RateLimit-Remaining: 0
 
 ---
 
-## 🧠 Rate Limiting Strategy
+## Rate Limiting Strategy
 
 * **Algorithm:** Token Bucket (in-memory)
 * **Key:** Client IP address
